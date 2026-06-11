@@ -1,1 +1,36 @@
-/* Tokens de diseño v1 (azul nocturno + ámbar tungsteno) /*
+/* ============================================================
+   STYLELAB — Tokens de diseño v1 (azul nocturno + ámbar tungsteno)
+   Cinematográfico · Nocturno · Deliberado · Street · NightLife
+   ============================================================ */
+:root {
+    --fondo:        #0E1118;  /* azul nocturno profundo */
+    --superficie:   #151A24;
+    --superficie-2: #1C2230;
+    --linea:        #2A3142;
+    --tinta:        #ECEDF2;
+    --tinta-2:      #8B92A6;
+    --ambar:        #E8A33D;  /* luz tungsteno: el acento cinematográfico */
+    --ambar-suave:  rgba(232,163,61,.14);
+    --teal:         #3E8A96;
+    --rojo:         #D85C5C;
+    --radio:        10px;
+    --display: 'Archivo', 'Arial Narrow', sans-serif;
+    --cuerpo:  'IBM Plex Sans', system-ui, sans-serif;
+    --mono:    'IBM Plex Mono', 'Consolas', monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { color-scheme: dark; }
+body {
+    background: var(--fondo);
+    color: var(--tinta);
+    font-family: var(--cuerpo);
+    font-size: 15px;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+button { font-family: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible, [tabindex]:focus-visible {
+    outline: 2px solid var(--ambar); outline-offset: 2px;
+}
+
+/* ---------- Cabecera: title card de película ---------- */
