@@ -1,0 +1,1 @@
+// Conversiones RGB/HSL/HEX, contraste, distancias.

@@ -1,0 +1,1 @@
+// Generador con silueta (Fase 7).
